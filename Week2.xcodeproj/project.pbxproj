@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D401FBBA214CB14500CAAA72 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401FBB9214CB14500CAAA72 /* Observable.swift */; };
+		D43CE9B3214EDF440002D027 /* PopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D43CE9B2214EDF440002D027 /* PopoverView.xib */; };
+		D43CE9B5214EDFB50002D027 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43CE9B4214EDFB50002D027 /* PopoverView.swift */; };
+		D43CE9B7214EE8950002D027 /* PopoverViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43CE9B6214EE8950002D027 /* PopoverViewCell.swift */; };
+		D44D8D0B214C3EAE00AC2D2A /* CircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */; };
+		D44D8D10214C422D00AC2D2A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D0F214C422D00AC2D2A /* UIColor+Extension.swift */; };
+		D44D8D13214C674A00AC2D2A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D12214C674A00AC2D2A /* TimerViewModel.swift */; };
+		D44D8D16214C67C300AC2D2A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D15214C67C300AC2D2A /* Category.swift */; };
 		D4A5BCD721475DA200B06AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCD621475DA200B06AB6 /* AppDelegate.swift */; };
-		D4A5BCD921475DA200B06AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCD821475DA200B06AB6 /* ViewController.swift */; };
+		D4A5BCD921475DA200B06AB6 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCD821475DA200B06AB6 /* TimerController.swift */; };
 		D4A5BCDC21475DA200B06AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A5BCDA21475DA200B06AB6 /* Main.storyboard */; };
 		D4A5BCDE21475DA200B06AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A5BCDD21475DA200B06AB6 /* Assets.xcassets */; };
 		D4A5BCE121475DA200B06AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A5BCDF21475DA200B06AB6 /* LaunchScreen.storyboard */; };
@@ -34,9 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D401FBB9214CB14500CAAA72 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		D43CE9B2214EDF440002D027 /* PopoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverView.xib; sourceTree = "<group>"; };
+		D43CE9B4214EDFB50002D027 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		D43CE9B6214EE8950002D027 /* PopoverViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewCell.swift; sourceTree = "<group>"; };
+		D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoader.swift; sourceTree = "<group>"; };
+		D44D8D0F214C422D00AC2D2A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D44D8D12214C674A00AC2D2A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		D44D8D15214C67C300AC2D2A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D4A5BCD321475DA200B06AB6 /* Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A5BCD621475DA200B06AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4A5BCD821475DA200B06AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4A5BCD821475DA200B06AB6 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		D4A5BCDB21475DA200B06AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4A5BCDD21475DA200B06AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A5BCE021475DA200B06AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +90,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D44D8D07214C3E4900AC2D2A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D4A5BCDA21475DA200B06AB6 /* Main.storyboard */,
+				D4A5BCDF21475DA200B06AB6 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D44D8D09214C3E6600AC2D2A /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4A5BCDD21475DA200B06AB6 /* Assets.xcassets */,
+				D4A5BCD621475DA200B06AB6 /* AppDelegate.swift */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		D44D8D0C214C3EB100AC2D2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */,
+				D4A5BCD821475DA200B06AB6 /* TimerController.swift */,
+				D43CE9B2214EDF440002D027 /* PopoverView.xib */,
+				D43CE9B4214EDFB50002D027 /* PopoverView.swift */,
+				D43CE9B6214EE8950002D027 /* PopoverViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D44D8D11214C424600AC2D2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D44D8D0F214C422D00AC2D2A /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D44D8D14214C674E00AC2D2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D44D8D12214C674A00AC2D2A /* TimerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D44D8D17214C67CC00AC2D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D44D8D15214C67C300AC2D2A /* Category.swift */,
+				D401FBB9214CB14500CAAA72 /* Observable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D4A5BCCA21475DA200B06AB6 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +168,12 @@
 		D4A5BCD521475DA200B06AB6 /* Week2 */ = {
 			isa = PBXGroup;
 			children = (
-				D4A5BCD621475DA200B06AB6 /* AppDelegate.swift */,
-				D4A5BCD821475DA200B06AB6 /* ViewController.swift */,
-				D4A5BCDA21475DA200B06AB6 /* Main.storyboard */,
-				D4A5BCDD21475DA200B06AB6 /* Assets.xcassets */,
-				D4A5BCDF21475DA200B06AB6 /* LaunchScreen.storyboard */,
+				D44D8D07214C3E4900AC2D2A /* StoryBoards */,
+				D44D8D17214C67CC00AC2D2A /* Model */,
+				D44D8D0C214C3EB100AC2D2A /* Views */,
+				D44D8D14214C674E00AC2D2A /* ViewModels */,
+				D44D8D11214C424600AC2D2A /* Extensions */,
+				D44D8D09214C3E6600AC2D2A /* Helper Files */,
 				D4A5BCE221475DA200B06AB6 /* Info.plist */,
 			);
 			path = Week2;
@@ -231,6 +303,7 @@
 			files = (
 				D4A5BCE121475DA200B06AB6 /* LaunchScreen.storyboard in Resources */,
 				D4A5BCDE21475DA200B06AB6 /* Assets.xcassets in Resources */,
+				D43CE9B3214EDF440002D027 /* PopoverView.xib in Resources */,
 				D4A5BCDC21475DA200B06AB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +329,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A5BCD921475DA200B06AB6 /* ViewController.swift in Sources */,
+				D44D8D13214C674A00AC2D2A /* TimerViewModel.swift in Sources */,
+				D4A5BCD921475DA200B06AB6 /* TimerController.swift in Sources */,
+				D43CE9B7214EE8950002D027 /* PopoverViewCell.swift in Sources */,
+				D43CE9B5214EDFB50002D027 /* PopoverView.swift in Sources */,
 				D4A5BCD721475DA200B06AB6 /* AppDelegate.swift in Sources */,
+				D401FBBA214CB14500CAAA72 /* Observable.swift in Sources */,
+				D44D8D0B214C3EAE00AC2D2A /* CircularLoader.swift in Sources */,
+				D44D8D10214C422D00AC2D2A /* UIColor+Extension.swift in Sources */,
+				D44D8D16214C67C300AC2D2A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
