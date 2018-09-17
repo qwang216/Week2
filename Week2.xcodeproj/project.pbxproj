@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D401FBBA214CB14500CAAA72 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401FBB9214CB14500CAAA72 /* Observable.swift */; };
-		D43CE9B3214EDF440002D027 /* PopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D43CE9B2214EDF440002D027 /* PopoverView.xib */; };
-		D43CE9B5214EDFB50002D027 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43CE9B4214EDFB50002D027 /* PopoverView.swift */; };
-		D43CE9B7214EE8950002D027 /* PopoverViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43CE9B6214EE8950002D027 /* PopoverViewCell.swift */; };
 		D44D8D0B214C3EAE00AC2D2A /* CircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */; };
 		D44D8D10214C422D00AC2D2A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D0F214C422D00AC2D2A /* UIColor+Extension.swift */; };
 		D44D8D13214C674A00AC2D2A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D8D12214C674A00AC2D2A /* TimerViewModel.swift */; };
@@ -22,6 +19,8 @@
 		D4A5BCE121475DA200B06AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A5BCDF21475DA200B06AB6 /* LaunchScreen.storyboard */; };
 		D4A5BCEC21475DA300B06AB6 /* Week2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCEB21475DA300B06AB6 /* Week2Tests.swift */; };
 		D4A5BCF721475DA300B06AB6 /* Week2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCF621475DA300B06AB6 /* Week2UITests.swift */; };
+		D4DFDAA5214F3FA500BB4B4A /* BebasNeue-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4DFDAA3214F3F6900BB4B4A /* BebasNeue-Regular.otf */; };
+		D4DFDAA6214F3FA800BB4B4A /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4DFDAA2214F3F6800BB4B4A /* BebasNeue-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +42,6 @@
 
 /* Begin PBXFileReference section */
 		D401FBB9214CB14500CAAA72 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		D43CE9B2214EDF440002D027 /* PopoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverView.xib; sourceTree = "<group>"; };
-		D43CE9B4214EDFB50002D027 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
-		D43CE9B6214EE8950002D027 /* PopoverViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewCell.swift; sourceTree = "<group>"; };
 		D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoader.swift; sourceTree = "<group>"; };
 		D44D8D0F214C422D00AC2D2A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D44D8D12214C674A00AC2D2A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
@@ -63,6 +59,8 @@
 		D4A5BCF221475DA300B06AB6 /* Week2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A5BCF621475DA300B06AB6 /* Week2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week2UITests.swift; sourceTree = "<group>"; };
 		D4A5BCF821475DA300B06AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DFDAA2214F3F6800BB4B4A /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		D4DFDAA3214F3F6900BB4B4A /* BebasNeue-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +109,8 @@
 		D44D8D0C214C3EB100AC2D2A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */,
 				D4A5BCD821475DA200B06AB6 /* TimerController.swift */,
-				D43CE9B2214EDF440002D027 /* PopoverView.xib */,
-				D43CE9B4214EDFB50002D027 /* PopoverView.swift */,
-				D43CE9B6214EE8950002D027 /* PopoverViewCell.swift */,
+				D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +169,7 @@
 				D44D8D14214C674E00AC2D2A /* ViewModels */,
 				D44D8D11214C424600AC2D2A /* Extensions */,
 				D44D8D09214C3E6600AC2D2A /* Helper Files */,
+				D4DFDAA4214F3F6E00BB4B4A /* Fonts */,
 				D4A5BCE221475DA200B06AB6 /* Info.plist */,
 			);
 			path = Week2;
@@ -195,6 +191,15 @@
 				D4A5BCF821475DA300B06AB6 /* Info.plist */,
 			);
 			path = Week2UITests;
+			sourceTree = "<group>";
+		};
+		D4DFDAA4214F3F6E00BB4B4A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFDAA3214F3F6900BB4B4A /* BebasNeue-Regular.otf */,
+				D4DFDAA2214F3F6800BB4B4A /* BebasNeue-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DFDAA6214F3FA800BB4B4A /* BebasNeue-Regular.ttf in Resources */,
 				D4A5BCE121475DA200B06AB6 /* LaunchScreen.storyboard in Resources */,
+				D4DFDAA5214F3FA500BB4B4A /* BebasNeue-Regular.otf in Resources */,
 				D4A5BCDE21475DA200B06AB6 /* Assets.xcassets in Resources */,
-				D43CE9B3214EDF440002D027 /* PopoverView.xib in Resources */,
 				D4A5BCDC21475DA200B06AB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,8 +337,6 @@
 			files = (
 				D44D8D13214C674A00AC2D2A /* TimerViewModel.swift in Sources */,
 				D4A5BCD921475DA200B06AB6 /* TimerController.swift in Sources */,
-				D43CE9B7214EE8950002D027 /* PopoverViewCell.swift in Sources */,
-				D43CE9B5214EDFB50002D027 /* PopoverView.swift in Sources */,
 				D4A5BCD721475DA200B06AB6 /* AppDelegate.swift in Sources */,
 				D401FBBA214CB14500CAAA72 /* Observable.swift in Sources */,
 				D44D8D0B214C3EAE00AC2D2A /* CircularLoader.swift in Sources */,

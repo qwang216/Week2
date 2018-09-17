@@ -19,44 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNF-GO-BbF">
-                                <rect key="frame" x="87" y="110" width="200" height="200"/>
+                                <rect key="frame" x="87" y="100" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="8Vy-O6-t1L"/>
                                     <constraint firstAttribute="width" constant="200" id="Ti7-sh-KwQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWh-x3-h9w" userLabel="PickerViewContainer">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYo-ji-cBO">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="216"/>
-                                        <color key="backgroundColor" white="0.5530983601297651" alpha="1" colorSpace="calibratedWhite"/>
-                                    </pickerView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="gYo-ji-cBO" firstAttribute="leading" secondItem="UWh-x3-h9w" secondAttribute="leading" id="A6e-RW-Emd"/>
-                                    <constraint firstAttribute="trailing" secondItem="gYo-ji-cBO" secondAttribute="trailing" id="IWY-ZQ-gFH"/>
-                                    <constraint firstItem="gYo-ji-cBO" firstAttribute="top" secondItem="UWh-x3-h9w" secondAttribute="top" constant="90" id="W25-Dj-Zeo"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E2-ij-reZ">
-                                <rect key="frame" x="10" y="40" width="355" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.2006510644306041" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1rx-Ev-x03"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tBv-jo-Rr8">
-                                <rect key="frame" x="98" y="350" width="180" height="40"/>
+                                <rect key="frame" x="98" y="340" width="180" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c43-rA-EiW">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
@@ -73,11 +43,18 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzD-ir-6Xv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WzD-ir-6Xv">
                                         <rect key="frame" x="110" y="0.0" width="70" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.2006510644" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Reset">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Reset">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="24" name="BebasNeue-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -91,16 +68,50 @@
                                     <constraint firstAttribute="height" constant="40" id="TmH-me-Mct"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWh-x3-h9w" userLabel="PickerViewContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYo-ji-cBO">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="215"/>
+                                        <color key="backgroundColor" white="0.5530983601297651" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="215" id="FpF-Gq-Giv"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gYo-ji-cBO" firstAttribute="leading" secondItem="UWh-x3-h9w" secondAttribute="leading" id="A6e-RW-Emd"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYo-ji-cBO" secondAttribute="trailing" id="IWY-ZQ-gFH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E2-ij-reZ">
+                                <rect key="frame" x="10" y="30" width="355" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.2006510644306041" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1rx-Ev-x03"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BebasNeue-Regular" family="Bebas Neue" pointSize="25"/>
+                                <state key="normal" title="  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UWh-x3-h9w" secondAttribute="bottom" id="0vw-JD-YHa"/>
                             <constraint firstItem="YNF-GO-BbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bo-AF-wFM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3E2-ij-reZ" secondAttribute="trailing" constant="10" id="BF9-mj-bvk"/>
-                            <constraint firstItem="3E2-ij-reZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="M7d-sm-P16"/>
-                            <constraint firstItem="YNF-GO-BbF" firstAttribute="top" secondItem="3E2-ij-reZ" secondAttribute="bottom" constant="30" id="YW5-nK-6xw"/>
+                            <constraint firstItem="3E2-ij-reZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="M7d-sm-P16"/>
+                            <constraint firstItem="gYo-ji-cBO" firstAttribute="top" secondItem="3E2-ij-reZ" secondAttribute="bottom" constant="10" id="VXs-YJ-6cQ"/>
+                            <constraint firstItem="YNF-GO-BbF" firstAttribute="top" secondItem="3E2-ij-reZ" secondAttribute="bottom" constant="30" id="ZkS-ch-jDl"/>
                             <constraint firstAttribute="trailing" secondItem="UWh-x3-h9w" secondAttribute="trailing" id="e6R-La-1bh"/>
                             <constraint firstItem="tBv-jo-Rr8" firstAttribute="top" secondItem="YNF-GO-BbF" secondAttribute="bottom" constant="40" id="r27-Ev-vxt"/>
+                            <constraint firstAttribute="bottom" secondItem="UWh-x3-h9w" secondAttribute="bottom" id="rbT-LI-ilo"/>
                             <constraint firstItem="UWh-x3-h9w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tb9-WP-bFj"/>
                             <constraint firstItem="tBv-jo-Rr8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgg-LQ-Cr1"/>
                             <constraint firstItem="3E2-ij-reZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vS3-r1-c0J"/>

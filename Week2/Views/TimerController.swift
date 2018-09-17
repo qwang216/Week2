@@ -55,6 +55,10 @@ class TimerController: UIViewController {
             self.categoryButton.setTitle(self.timerViewModel?.formatTitleFor($0), for: .normal)
         }
 
+        timerViewModel?.percentCompletion.bind { [unowned self] in
+            self.loaderView.startAnimate(with: $0)
+        }
+
     }
 
     func setupButtonTarget() {
@@ -65,7 +69,6 @@ class TimerController: UIViewController {
 
     @objc func playPauseButtonHandler(button: UIButton) {
         timerViewModel?.playPause()
-
     }
 
     @objc func resetButtonHandler(button: UIButton) {
