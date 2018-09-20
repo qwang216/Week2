@@ -101,14 +101,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6f-Hs-0Fv">
+                                <rect key="frame" x="313" y="617" width="42" height="30"/>
+                                <state key="normal" title="About"/>
+                                <connections>
+                                    <segue destination="WWf-kx-G6X" kind="show" id="olI-cY-dW3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YNF-GO-BbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bo-AF-wFM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3E2-ij-reZ" secondAttribute="trailing" constant="10" id="BF9-mj-bvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c6f-Hs-0Fv" secondAttribute="bottom" constant="20" id="Bud-tH-KQZ"/>
                             <constraint firstItem="3E2-ij-reZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="M7d-sm-P16"/>
                             <constraint firstItem="gYo-ji-cBO" firstAttribute="top" secondItem="3E2-ij-reZ" secondAttribute="bottom" constant="10" id="VXs-YJ-6cQ"/>
                             <constraint firstItem="YNF-GO-BbF" firstAttribute="top" secondItem="3E2-ij-reZ" secondAttribute="bottom" constant="30" id="ZkS-ch-jDl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c6f-Hs-0Fv" secondAttribute="trailing" constant="20" id="czn-8s-V1b"/>
                             <constraint firstAttribute="trailing" secondItem="UWh-x3-h9w" secondAttribute="trailing" id="e6R-La-1bh"/>
                             <constraint firstItem="tBv-jo-Rr8" firstAttribute="top" secondItem="YNF-GO-BbF" secondAttribute="bottom" constant="40" id="r27-Ev-vxt"/>
                             <constraint firstAttribute="bottom" secondItem="UWh-x3-h9w" secondAttribute="bottom" id="rbT-LI-ilo"/>
@@ -131,6 +140,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+        <!--About Page Controller-->
+        <scene sceneID="BzD-uJ-P6y">
+            <objects>
+                <viewController id="WWf-kx-G6X" customClass="AboutPageController" customModule="Week2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Afc-ng-qTO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW5-eC-Kmt">
+                                <rect key="frame" x="10" y="101" width="355" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Credits: 
+Developer: Jason Wang
+Bebas Neue by Dharma Type
+http://bebasneue.com/</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jT-xi-00O">
+                                <rect key="frame" x="10" y="70" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAw-A6-nTR">
+                                <rect key="frame" x="10" y="30" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="7Pf-wt-vrX"/>
+                                    <constraint firstAttribute="height" constant="30" id="jQj-np-rtX"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonHandler:" destination="WWf-kx-G6X" eventType="touchUpInside" id="VE0-dm-FQj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MAw-A6-nTR" firstAttribute="top" secondItem="Deb-gb-Kg4" secondAttribute="top" constant="10" id="D2b-WB-Iky"/>
+                            <constraint firstItem="eW5-eC-Kmt" firstAttribute="top" secondItem="9jT-xi-00O" secondAttribute="bottom" constant="10" id="DMG-LW-W1v"/>
+                            <constraint firstItem="Deb-gb-Kg4" firstAttribute="bottom" secondItem="eW5-eC-Kmt" secondAttribute="bottom" constant="10" id="HEV-x8-TA5"/>
+                            <constraint firstItem="MAw-A6-nTR" firstAttribute="leading" secondItem="Deb-gb-Kg4" secondAttribute="leading" constant="10" id="SXn-xc-vLG"/>
+                            <constraint firstItem="eW5-eC-Kmt" firstAttribute="leading" secondItem="Deb-gb-Kg4" secondAttribute="leading" constant="10" id="Vbh-H7-Oh5"/>
+                            <constraint firstItem="Deb-gb-Kg4" firstAttribute="trailing" secondItem="eW5-eC-Kmt" secondAttribute="trailing" constant="10" id="jkk-Wo-mbq"/>
+                            <constraint firstItem="9jT-xi-00O" firstAttribute="leading" secondItem="Deb-gb-Kg4" secondAttribute="leading" constant="10" id="lvj-RZ-lD5"/>
+                            <constraint firstItem="9jT-xi-00O" firstAttribute="top" secondItem="MAw-A6-nTR" secondAttribute="bottom" constant="10" id="qmb-Fm-9KX"/>
+                            <constraint firstItem="Deb-gb-Kg4" firstAttribute="trailing" secondItem="9jT-xi-00O" secondAttribute="trailing" constant="10" id="uvk-Cn-oZd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Deb-gb-Kg4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnB-4r-Iu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="30"/>
         </scene>
     </scenes>
 </document>

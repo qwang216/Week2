@@ -18,6 +18,9 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
+    cert
+    sigh(force: true)
+    increment_build_number(xcodeproj: "Week2.xcodeproj")
     build_app(scheme: "Week2")
     upload_to_testflight
   end

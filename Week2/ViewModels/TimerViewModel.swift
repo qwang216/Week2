@@ -16,7 +16,7 @@ class TimerViewModel {
     public private(set) var isRunning = Observable<Bool>(false)
     private var categories: [Category]
     var selectedCategory = Observable<Category>(Category(name: "Test Timer", min: 1, max: 2))
-    private var timeCounter: Int = 85
+    private var timeCounter: Int = 0
     private var timer: Timer?
 
     init(categories: [Category]) {
@@ -90,7 +90,6 @@ class TimerViewModel {
 
     private func updateSpeechColorState(currentMinutes: TimeInterval, category: Category) -> UIColor {
         var colorState: UIColor = .white
-        print("currentTime: \(currentMinutes)  min: \(category.min) mid: \(category.mid) max: \(category.max)")
         if currentMinutes >= category.min && currentMinutes < category.mid {
             colorState =  .green
         } else if currentMinutes >= category.mid && currentMinutes < category.max {

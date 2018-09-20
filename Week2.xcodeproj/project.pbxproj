@@ -19,6 +19,8 @@
 		D4A5BCE121475DA200B06AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A5BCDF21475DA200B06AB6 /* LaunchScreen.storyboard */; };
 		D4A5BCEC21475DA300B06AB6 /* Week2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCEB21475DA300B06AB6 /* Week2Tests.swift */; };
 		D4A5BCF721475DA300B06AB6 /* Week2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5BCF621475DA300B06AB6 /* Week2UITests.swift */; };
+		D4C1009E214F57AD009D046A /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1009D214F57AD009D046A /* AboutPageController.swift */; };
+		D4C100AE214F5C38009D046A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C100AD214F5C38009D046A /* SnapshotHelper.swift */; };
 		D4DFDAA5214F3FA500BB4B4A /* BebasNeue-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4DFDAA3214F3F6900BB4B4A /* BebasNeue-Regular.otf */; };
 		D4DFDAA6214F3FA800BB4B4A /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4DFDAA2214F3F6800BB4B4A /* BebasNeue-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		D4A5BCF221475DA300B06AB6 /* Week2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A5BCF621475DA300B06AB6 /* Week2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week2UITests.swift; sourceTree = "<group>"; };
 		D4A5BCF821475DA300B06AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C1009D214F57AD009D046A /* AboutPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageController.swift; sourceTree = "<group>"; };
+		D4C100AD214F5C38009D046A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		D4DFDAA2214F3F6800BB4B4A /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
 		D4DFDAA3214F3F6900BB4B4A /* BebasNeue-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +115,7 @@
 			children = (
 				D4A5BCD821475DA200B06AB6 /* TimerController.swift */,
 				D44D8D0A214C3EAE00AC2D2A /* CircularLoader.swift */,
+				D4C1009D214F57AD009D046A /* AboutPageController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		D4A5BCF521475DA300B06AB6 /* Week2UITests */ = {
 			isa = PBXGroup;
 			children = (
+				D4C100AD214F5C38009D046A /* SnapshotHelper.swift */,
 				D4A5BCF621475DA300B06AB6 /* Week2UITests.swift */,
 				D4A5BCF821475DA300B06AB6 /* Info.plist */,
 			);
@@ -336,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44D8D13214C674A00AC2D2A /* TimerViewModel.swift in Sources */,
+				D4C1009E214F57AD009D046A /* AboutPageController.swift in Sources */,
 				D4A5BCD921475DA200B06AB6 /* TimerController.swift in Sources */,
 				D4A5BCD721475DA200B06AB6 /* AppDelegate.swift in Sources */,
 				D401FBBA214CB14500CAAA72 /* Observable.swift in Sources */,
@@ -358,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A5BCF721475DA300B06AB6 /* Week2UITests.swift in Sources */,
+				D4C100AE214F5C38009D046A /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Week2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,6 +535,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -535,6 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 55V3ELH4AV;
 				INFOPLIST_FILE = Week2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -547,6 +558,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "com.JasonWang.Week2 AppStore";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
